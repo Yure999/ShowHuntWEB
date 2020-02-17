@@ -1,0 +1,152 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    color: #DDDDDD;
+
+    background: linear-gradient(-45deg, #db6e4d, #d76c80, #459fcd, #31d483);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+a{
+    color: #fcfcfc;
+    text-decoration: none;
+}
+a:hover{
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.pageTittle {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.bandSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content:space-between ;
+}
+
+.bandSearch > #bandNameText {
+    font-size: 1.5rem;
+    margin-right: 7px;
+}
+
+.citySearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content:space-between ;
+}
+
+.citySearch > #cityText {
+    font-size: 1.5rem;
+    margin-right: 7px;
+}
+
+#searchButton {
+
+}
+.result{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 25px;
+    align-items: center;
+    -webkit-animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000) ;
+    animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000) ;
+}
+.showInfo{
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.nameAndDate{
+    display: flex;
+    flex-direction: column;
+}
+.tourName{
+    margin-right: 7px;
+    font-size: 1.6rem;
+}
+.tourDate{
+    font-size: 1.2rem;
+}
+.bandImage{
+    height: 90px;
+    width: 90px;
+}
+.buyLink{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@-webkit-keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

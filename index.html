@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowHunt</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+</head>
+<body>
+<span class="pageTittle">ShowHunt</span>
+<div class="container">
+    <div class="searchBar">
+        <div class="bandSearch">
+            <span id="bandNameText">BandName: </span>
+            <input type="text" id="bandNameTextArea" onkeydown="enterSearch()">
+        </div>
+        <div class="citySearch">
+            <span id="cityText">City: </span>
+            <input type="text" id="cityTextArea" onkeydown="enterSearch()">
+        </div>
+        <button id="searchButton" onclick="fetchData()">SEARCH</button>
+    </div>
+
+    <ul id="results">
+
+    </ul>
+</div>
+
+
+<script src="JS/Script.js"></script>
+</body>
+</html>
